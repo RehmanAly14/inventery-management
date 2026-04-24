@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Inventory Management System
+
+### A full-stack Inventory Management System built with Next.js (v15) and TypeScript, focused on strong backend logic, scalability, and real-world functionality.
+
+#### This project emphasizes practical development over UI polish, implementing core inventory features like tracking, alerts, and analytics.
+
+---
+
+## Features
+#### Real-Time Inventory Tracking
+- Monitor product quantities and updates instantly
+#### Low Stock Alerts
+- Get notified when inventory drops below a defined threshold
+#### Data Visualization
+- Interactive charts for insights and decision-making
+#### Authentication System
+- Secure user authentication and session handling
+#### Type-Safe Backend
+- Built with strict TypeScript practices for reliability
+#### Database Integration
+- Efficient data handling with PostgreSQL
+
+---
+
+## Tech Stack
+
+- Next.js 15	Full-stack framework
+- TypeScript	Type safety & maintainability
+- Prisma	ORM for database management
+- Neon (PostgreSQL)	Serverless database
+- Zod	Schema validation
+- Recharts	Data visualization
+- StackFrame	Authentication system
+
+---
+
+## 📁 Project Structure
+/app            → Next.js app router pages
+/components     → Reusable UI components
+/lib            → Utility functions & configs
+/prisma         → Database schema & migrations
+
+---
 
 ## Getting Started
+#### 1. Clone the repository
+- git clone https://github.com/your-username/inventory-management-system.git
+- cd inventory-management-system
+#### 2. Install dependencies
+- npm install
+#### 3. Setup environment variables
 
-First, run the development server:
+#### Create a .env file and add:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- DATABASE_URL=your_database_url
+- NEXTAUTH_SECRET=your_secret
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 4. Run database migrations
+- npx prisma migrate dev
+#### 5. Start the development server
+- npm run dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Contributions, issues, and feature requests are welcome!
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Feel free to connect or reach out if you’d like to collaborate
